@@ -1,0 +1,66 @@
+.hero-background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.hero {
+  position: relative;
+  margin-top: 263px;
+  padding-bottom: 136px;
+}
+
+.hero .hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.hero .title {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: left;
+  max-width: 430px;
+}
+
+.hero .desc {
+  max-width: 474px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+.hero .hero-btn {
+  margin-top: 28px;
+  padding-top: 16.36px;
+  padding-bottom: 16.36px;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.pagination-item {
+  width: 14.82px;
+  height: 3.09px;
+  background: #eeeeee;
+  border-radius: 99px;
+}
+
+.pagination-item.active {
+  width: 25.31px;
+  height: 8.15px;
+  border-radius: 99px;
+  background-color: var(--active-color);
+}

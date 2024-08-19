@@ -1,0 +1,96 @@
+/* Header */
+.fixed-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 41px;
+  z-index: 99;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+  height: 63px;
+}
+
+.header .logo {
+  height: 100%;
+}
+
+.header .logo img {
+  height: 100%;
+}
+
+.header .actions {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+}
+
+.header .actions .menu {
+  display: flex;
+  gap: 45px;
+}
+
+.header .actions .menu .menu-item {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.header .actions .menu .menu-item:not(.active):hover {
+  color: var(--active-color);
+}
+
+.header .actions .menu .menu-item.active {
+  color: var(--active-color);
+  position: relative;
+}
+
+.header .actions .menu .menu-item.active::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  translate: 100% -50%;
+  right: -5px;
+}
+
+.header .contact-btn {
+  padding: 14px 41px;
+}
+
+.header .menu-icon {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  
+}
+@media screen and (max-width: 768px) {
+  
+}
+@media screen and (max-width: 1024px) {
+  .fixed-header {
+    top: 15px;
+  }
+  .header {
+    height: 50px;
+  }
+  .header .actions {
+    display: none;
+  }
+  .header .menu-icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 1280px) {
+  
+}

@@ -1,0 +1,11 @@
+
+@import url("./variables.css");
+@import url("./common.css");
+@import url("./components/header.css");
+@import url("./components/hero.css");
+
+html {
+  font-family: Poppins;
+  font-size: 62.5%;
+  height: 10000px;
+}

@@ -1,0 +1,117 @@
+.contact {
+  margin-top: 145px;
+  position: relative;
+}
+
+.contact-bg {
+  position: absolute;
+  z-index: -1;
+}
+
+.contact-inner {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.contact .content {
+  max-width: 520px;
+}
+
+.contact .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact .heading .subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: var(--primary-color);
+}
+
+.contact .heading .title {
+  max-width: 404px;
+  min-height: 97px;
+}
+
+.contact .heading .desc {
+  min-height: 28px;
+}
+
+.contact .contact-form .form-inner {
+  max-width: 100%;
+  margin-top: 44px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 38px 35px;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+  background: var(--white-color);
+  padding: 17px 24px;
+  height: 61.58px;
+  border-radius: 15px;
+  border: 1px solid #d9ddfe;
+  display: block;
+  flex-grow: 1;
+  box-sizing: border-box;
+  flex-basis: 400px;
+}
+
+.contact .contact-form textarea {
+  padding: 25px 24px;
+  height: 239px;
+  resize: none;
+}
+
+.contact-form input:nth-child(1),
+.contact-form input:nth-child(2) {
+  flex-basis: 242px;
+}
+
+.contact .contact-form input::placeholder,
+.contact .contact-form textarea::placeholder {
+  transform: translateY(2px);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: var(--placeholder-color);
+}
+
+.contact .contact-form textarea::placeholder {
+  transform: translateY(-2px);
+}
+
+.contact-form .contact-btn {
+  min-height: 58px;
+  min-width: 248px;
+  margin-left: 1px;
+  margin-top: 56px;
+  box-shadow: 0px 17px 22px 0px #ffedf6;
+  padding: 15px 38px 16px 37px;
+}
+
+.contact .contact-img {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-inner {
+    flex-direction: column;
+  }
+  .contact .heading .subtitle {
+    text-align: center;
+  }
+  .contact .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

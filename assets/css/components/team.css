@@ -1,0 +1,124 @@
+.teams {
+  margin-top: 132px;
+}
+
+.teams .heading .subtitle {
+  color: #ff64ae;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+
+.teams .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.teams .heading .title {
+  min-height: 53px;
+}
+
+.teams .desc {
+  min-height: 51px;
+}
+
+.teams .member-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 83px;
+}
+
+.teams .member-list .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.teams .member-list .card.active {
+  padding: 93px 77px 96px;
+  border-radius: 42px;
+  box-shadow: 0px 25px 50px 25px #F6F7FF;
+}
+
+.teams .member-list .card .avatar {
+  flex-shrink: 0;
+  width: 146px;
+  height: 146px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.teams .member-list .card .content {
+  margin-top: 53px;
+  margin-bottom: 50px;
+}
+
+.teams .member-list .card .role {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.teams .member-list .card .name {
+  margin-top: 15px;
+  margin-bottom: 6px;
+  min-height: 37px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 22.5px;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.teams .member-list .card .desc {
+  width: 270px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.teams .member-list .card .socials {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.teams .member-list .card .social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -2px 6px 16px -1px #e6e9fd;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.teams .member-list .card .social-item:hover {
+  background: #fafafa;
+}
+
+@media screen and (max-width: 1024px) {
+  .teams .member-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .teams .heading {
+    text-align: center;
+  }
+  .teams .desc {
+    text-align: center;
+  }
+}

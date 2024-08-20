@@ -7,23 +7,8 @@
   z-index: 99;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 4px 0;
-  height: 63px;
-}
-
-.header .logo {
-  height: 100%;
-}
-
-.header .logo img {
-  height: 100%;
-}
-
 .header .actions {
+  margin-top: -3px;
   display: flex;
   align-items: center;
   gap: 52px;
@@ -31,10 +16,14 @@
 
 .header .actions .menu {
   display: flex;
+  align-items: center;
   gap: 45px;
 }
 
 .header .actions .menu .menu-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 24px;
@@ -50,19 +39,23 @@
 
 .header .actions .menu .menu-item.active {
   color: var(--active-color);
-  position: relative;
 }
 
-.header .actions .menu .menu-item.active::after {
-  content: "+";
-  position: absolute;
-  top: 50%;
-  translate: 100% -50%;
-  right: -5px;
+.header .actions .menu .menu-item .plus-icon {
+  display: none;
+}
+
+.header .actions .menu .menu-item.active .plus-icon {
+  display: block;
 }
 
 .header .contact-btn {
   padding: 14px 41px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 2px;
+  min-width: 158px;
 }
 
 .header .menu-icon {
@@ -72,17 +65,28 @@
 }
 
 @media screen and (max-width: 640px) {
-  
 }
 @media screen and (max-width: 768px) {
-  
 }
 @media screen and (max-width: 1024px) {
   .fixed-header {
     top: 15px;
   }
   .header {
-    height: 50px;
+    margin-top: 20px;
+    height: 45px;
+    padding: 0 20px;
+  }
+  .header .logo .brand-name {
+    visibility: hidden;
+  }
+  .header .logo .logo-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 7px;
+  }
+  .header .logo .logo-icon > * {
+    font-size: 7px;
   }
   .header .actions {
     display: none;
@@ -92,5 +96,4 @@
   }
 }
 @media screen and (max-width: 1280px) {
-  
 }

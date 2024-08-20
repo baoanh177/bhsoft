@@ -2,10 +2,36 @@
 @import url("./variables.css");
 @import url("./common.css");
 @import url("./components/header.css");
+@import url("./components/sidebar.css");
 @import url("./components/hero.css");
+@import url("./components/service.css");
+@import url("./components/about.css");
+@import url("./components/team.css");
+@import url("./components/contact.css");
+@import url("./components/footer.css");
 
 html {
   font-family: Poppins;
   font-size: 62.5%;
-  height: 10000px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-family: Poppins;
+    font-size: 55.5%;
+  }
+}
+@media screen and (max-width: 1280px) {
 }
